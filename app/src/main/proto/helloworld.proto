@@ -3,7 +3,7 @@ package helloworld;
 option java_package = "com.takagisou.grpc_kotlin_sample.pb";
 
 service Greeter {
-  rpc SayHello (HelloRequest) returns (HelloReply);
+  rpc SayHello (HelloRequest) returns (HelloReply) {}
 }
 
 message HelloRequest {

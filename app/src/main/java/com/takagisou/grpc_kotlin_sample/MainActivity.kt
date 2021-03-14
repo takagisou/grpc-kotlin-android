@@ -24,18 +24,15 @@ class MainActivity : AppCompatActivity(R.layout.activity_main) {
     }
 
     private fun bind() {
-        // cf. https://developer.android.com/topic/libraries/architecture/viewmodel#implement
         model.message.observe(this) { message ->
             binding.text.text = message
         }
-        model.fetch()
 
-//        "http://10.0.2.2"
-//            .httpGet()
-//            .responseString { request, response, result ->
-//                Log.d("MAIN", "$request")
-//                Log.d("MAIN", "$response")
-//                Log.d("MAIN", "$result")
-//            }
+        // https://grpcb.in/
+        // https://github.com/moul/pb/blob/master/grpcbin/grpcbin.proto
+//        model.endpoints.observe(this) { endpoints ->
+//            binding.text.text = "$endpoints"
+//        }
+        model.fetch()
     }
 }
