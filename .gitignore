@@ -90,3 +90,5 @@ lint/tmp/
 *.hprof
 
 
+# proto
+*.proto
