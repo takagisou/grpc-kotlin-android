@@ -19,8 +19,10 @@ class ClientDataSource : ClientRepository {
         // Run `ngrok tcp 50051` on host machine.
         // server: https://github.com/takagisou/helloworld-tonic
         // not working by 10.0.2.2
-        val host = "0.tcp.ngrok.io"
-        val port = 14605
+        // val host = "8.tcp.ngrok.io"
+        // val port = 14605
+        val host = "10.0.2.2"
+        val port = 50051
         val channel = ManagedChannelBuilder
             .forAddress(host, port)
             .usePlaintext()

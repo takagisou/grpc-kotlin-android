@@ -59,3 +59,5 @@ https://github.com/grpc/grpc-kotlin
 https://at-sushi.work/blog/12
 
 https://mizunashi-mana.github.io/blog/posts/2020/04/kotlin-android-grpc/
+
+https://stackoverflow.com/a/59555606
